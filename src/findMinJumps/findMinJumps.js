@@ -44,25 +44,25 @@ export default function findMinJumpsPath(arr) {
             shortestPath.push(arr[arr.length-1]);
             return shortestPath;
         }
-
-        jumps--;
-
+        
         // If no more jumps can be made from the current max distance integer.
         if (jumps === 0) {
-
+            
             // Add current max distance integer to the shortest path (if it's not the first element).
             if (maxDistanceIndex > 0) {
                 shortestPath.push(arr[maxDistanceIndex]);
             }
-
+            
             // If the current position is beyond the reach of the integer with the max reachable distance.
             if (i >= maxDistance) {
                 return 0;
             }
-
+            
             // Set how many new jumps can be made from the current position.
             jumps = maxDistance - i;
         }
+
+        jumps--;
     }
     return 0;
 }
