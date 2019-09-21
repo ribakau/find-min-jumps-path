@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 import ArrayInput from './ArrayInput';
 import ResultStatus from './ResultStatus';
+import ShortestPath from './ShortestPath';
 
 
 class App extends React.Component {
@@ -16,11 +17,10 @@ class App extends React.Component {
     this.handleArrayInputChange = this.handleArrayInputChange.bind(this);
   }
 
-  handleArrayInputChange(newInput) {
-    this.setState({arrayInput: newInput.split(',').map(Number)});
-    console.log(this.state.arrayInput);
+  handleArrayInputChange(stringInput) {
+    let formatedInput = stringInput.trim();
+    this.setState({arrayInput: formatedInput.split(',').map(Number)});
   }
-
 
 
   render() {
@@ -35,6 +35,11 @@ class App extends React.Component {
         <Row>
           <Col>
             <ResultStatus minJumpsPath={minJumpsPath}/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <ShortestPath minJumpsPath={minJumpsPath}/>
           </Col>
         </Row>
       </Container>

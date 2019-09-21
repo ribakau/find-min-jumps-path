@@ -8,9 +8,9 @@ class ResultStatus extends React.Component {
       let status;
 
       if (isValid) {
-          status = <p>The minimum number of jumps need to reach the end is: {this.props.minJumpsPath.length - 1}</p>
+          status = <h5>The minimum number of jumps needed to reach the end is: {this.props.minJumpsPath.length - 1}</h5>
       } else {
-          status = <p>The provided array is not valid.</p>
+          status = <h5>The provided array is not valid.</h5>
       }
       return (
         <div>
