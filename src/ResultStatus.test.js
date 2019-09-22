@@ -45,7 +45,7 @@ describe('ResultStatus component', () => {
   });
 
   it("renders correct status with an invalid input", () => {
-    let testArray = 0; // 2 jumps
+    let testArray = 0;
     act(() => {
       render(<ResultStatus minJumpsPath={testArray}/>, container);
     });

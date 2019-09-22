@@ -1,30 +1,29 @@
 ## App Description
 
-This app finds the minimum number of jumps needed to go from first to the last element of any given integer array (if the last integer is reachable). If the array provided is valid and the last integer is reachable, the app displays all the integers that are traversed on the shortest path to the last element.
+**Find Min Jumps App** finds the minimum number of jumps needed to go from first to the last element of any given integer array (if the last integer is reachable). If the array provided is valid and the last element is reachable, the app will also display the shortest path graph.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+A live demo of this app can be viewed here: [https://find-min-jumps-path.herokuapp.com/]
 
-### `npm start`
+## Running the development mode locally
 
-Runs the app in the development mode.<br>
+Given that **Node.js** is installed, from inside the project directory you need to run:
+
+```
+npm install
+```
+
+and then 
+
+```
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run tests run:
+```
+npm test
+```
