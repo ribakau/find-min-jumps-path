@@ -5,9 +5,15 @@ import { ArcherContainer, ArcherElement } from 'react-archer';
 // ShortestPath draws a directed graph representing the shortest path.
 class ShortestPath extends React.Component {  
   render() {
-    const isValid = this.props.minJumpsPath ? true : false;
+
+    // Return empty div if the path is undefined
+    if (this.props.minJumpsPath === undefined) {
+      return(<div></div>);
+    }
+
+    const isValid = this.props.minJumpsPath.length > 0 ? true : false;
     const rowStyle = { margin: '30px 0', display: 'flex', justifyContent: 'space-between', }
-    const array = Array.from(this.props.minJumpsPath);
+    const array = isValid ? Array.from(this.props.minJumpsPath) : [];
 
     // Generate an array of PathNode elements from a simple integer array.
     const listItems = array.map((number, index) =>
