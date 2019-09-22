@@ -1,0 +1,16 @@
+.title {
+    background-color: rosybrown;
+    color: snow;
+    border-bottom: 1px solid #E8E9EA;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.arrayInput {
+    margin-bottom: 20px;
+}
+
+.resultStatus {
+    margin-bottom: 20px;
+}

@@ -8,8 +8,8 @@ class ArrayInput extends React.Component {
       this.handleChange = this.handleChange.bind(this);
     }
   
-    // Pass the input value to the parent component.
     handleChange(e) {
+      // Pass the input value to the parent component.
       this.props.onArrayInputChange(e.target.value);
     }
   
@@ -17,11 +17,11 @@ class ArrayInput extends React.Component {
       const array = this.props.array;
       return (
         <div>
-            <h5>Enter an array (numbers should be separated by a comma):</h5>
+            <h5>Enter an array of integers:</h5>
             <Form.Control
                 size="lg"
                 type="text"
-                placeholder="e.g. 3, 1, 4 ..."
+                placeholder="e.g. 3, -1, 4, 0, ..."
                 value={array}
                 onChange={this.handleChange} />
         </div>
