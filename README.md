@@ -4,26 +4,24 @@
 
 ## Live Demo
 
-A live demo of this app can be viewed here: [https://find-min-jumps-path.herokuapp.com/]
+A live demo of this app can be viewed here: https://find-min-jumps-path.herokuapp.com/
 
 ## Running the development mode locally
 
 Given that **Node.js** is installed, from inside the project directory you need to run:
-
 ```
 npm install
 ```
 
-and then 
-
+and then:
 ```
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-To run tests run:
+To run tests use:
 ```
 npm test
 ```
